@@ -32,7 +32,19 @@ _start:
 	inc eax	
 	add eax, edi		; RVA + Base	
 	nop			; eax == function name imporation
-	nop
-	nop
-	jmp bcl	
+	
+	cmp dword[eax+0x00], 0x50746547
+	jne bcl
+	cmp dword[eax+0x04], 0x41636f72
+	jne bcl
+	cmp dword[eax+0x08], 0x65726464
+	jne bcl
+
+	dec ecx
+	mov edx, dword[ ebx+0x10]
+	add edx, edi
+	
+	mov edi, dword[edx+ecx*4] ; EDI == GetProcAddress
+	
+	jmp _start
 
