@@ -23,15 +23,16 @@ _start:
 
 	mov esi, dword[ebx]	; RVA 
 	add esi, edi		; Offset + BASE
-	
+
 	xor ecx, ecx		; calc iteration
 	bcl:	
-	inc ecx
-	inc esi			; IMAGE_IMPORT_BY_NAME [ WORD + FUNCTION NAME ]
-	inc esi			; 
+	inc ecx			; 
 	lodsd
+	inc eax			; IMAGE_IMPORT_BY_NAME [ WORD + FUNCTION NAME ]
+	inc eax	
 	add eax, edi		; RVA + Base	
 	nop			; eax == function name imporation
 	nop
 	nop
 	jmp bcl	
+
