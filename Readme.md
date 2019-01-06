@@ -13,4 +13,4 @@ Listing of all functions imported by a program in asm from TEB imageBase.
   * ImageBaseAddress + RVAImportationTables
   * Loop Function
   
-<img src="https://zupimages.net/up/19/01/q74n.png">
+<img src="https://zupimages.net/up/19/01/k2dt.png">
