@@ -12,3 +12,5 @@ Listing of all functions imported by a program in asm from TEB imageBase.
   * PE + 0x80 : imporation
   * ImageBaseAddress + RVAImportationTables
   * Loop Function
+  
+<img src="https://zupimages.net/up/19/01/q74n.png">
