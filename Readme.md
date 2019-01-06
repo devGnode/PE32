@@ -3,6 +3,7 @@
 ### :one: Little Exercices
 
 Try to catch GetProcAddress from import table IAT. this method works for all soft who import some functions from kernel32.dll.
+Only with putty.exe on XP sp3.
 
   * Access to TEB : 0x30
   * ImageBaseAddress : 0x08
