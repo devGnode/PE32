@@ -2,7 +2,7 @@
 
 ### :one: Little Exercices
 
-Listing of all functions imported by a program in asm from TEB imageBase.
+Try to catch GetProcAddress from import table IAT. this method works for all soft who import some functions from kernel32.dll.
 
   * Access to TEB : 0x30
   * ImageBaseAddress : 0x08
