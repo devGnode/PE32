@@ -12,5 +12,6 @@ Listing of all functions imported by a program in asm from TEB imageBase.
   * PE + 0x80 : imporation
   * ImageBaseAddress + RVAImportationTables
   * Loop Function
+  * EDI == GetProcAddress
   
 <img src="https://zupimages.net/up/19/01/c75v.png">
