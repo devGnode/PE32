@@ -1,6 +1,6 @@
 # PE32
 
-### :one: Little Exercices
+### :one: Little Exercice
 
 Try to catch GetProcAddress from import table IAT. this method works for all soft who import some functions from kernel32.dll.
 Only with putty.exe on XP sp3.
