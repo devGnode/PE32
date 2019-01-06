@@ -1,16 +1,16 @@
-/*
-
-	READ IMPORATION TABLE
-
-	@By Maroder for devGnode
-*/
+;
+;
+;	READ IMPORATION TABLE
+;
+;	@By Maroder for devGnode
+;
 [BITS 32]
 
 	global _start
 
 section .data
 section .bss
-
+section .text
 _start:
 	xor edx, edx		; 
 	mov eax, [fs:edx+0x30]	; TEB
